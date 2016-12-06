@@ -56,16 +56,16 @@
 #### 强制转换：
      a=1.234 int（a）=1 取整数
 #### import math 引用math这个数学库
-     math.sqrt(a):a开方
-     math.pow(a,b):a的b次方
-     math.trunc(a):如果a是小数，省去小数部分，或者int（a）函数，也可以省去小数部分
-     math.floor(a):对a向下求整，他的值小于或等于a
-     math.cell(a):对a向上求整，她的值大于或等于a
-     math.factorial(a):求a的阶乘
-     math.exp(a):求e的a次方
+     math.sqrt(a):a开方
+     math.pow(a,b):a的b次方
+     math.trunc(a):如果a是小数，省去小数部分，或者int（a）函数，也可以省去小数部
+     math.floor(a):对a向下求整，他的值小于或等于a
+     math.cell(a):对a向上求整，她的值大于或等于a
+     math.factorial(a):求a的阶乘
+     math.exp(a):求e的a次方
 #### import random 引入random模块（随机）
-     random.random():随机生成一组数
-     random.choice（数据类型）：在这个数据类型中随机挑选一个
+     random.random():随机生成一组数
+     random.choice（数据类型）：在这个数据类型中随机挑选一个
 #### 转义字符
      \n 换行
      \r 回车
