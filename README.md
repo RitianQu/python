@@ -187,13 +187,13 @@
      __getattr__ 调用一个不存在的变量时会调用getattr
      __setattr__ 给一个不存在的属性赋值时会调用setattr
 #### 迭代器和生成器
-     迭代器
+     迭代器
      class TestIter:
-         def __init__(self,a):
-             self.a = a
+     def __init__(self,a):
+         self.a = a
      def __iter__(self):
          return self
-     def __next__（self）:
+     def __next__（self）:
          self.a += 1
          return self.a ** 2
      a = TestIter(2)
