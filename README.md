@@ -186,3 +186,27 @@
      a.__dict__ 字典
      __getattr__ 调用一个不存在的变量时会调用getattr
      __setattr__ 给一个不存在的属性赋值时会调用setattr
+#### 迭代器和生成器
+     迭代器
+     class TestIter:
+         def __init__(self,a):
+             self.a = a
+     def __iter__(self):
+         return self
+     def __next__（self）:
+         self.a += 1
+         return self.a ** 2
+     a = TestIter(2)
+     print (next(a))
+     print (a.__next__()) 与上一行表达意思相同，python2，3都可以使用
+     生成器
+     生成器是一次生成一个值的特殊类型函数。可以将其视为可恢复函数。调用该函数将返回一个可用于生成连续x值的生成器，简单的说就是在函数的执行过程中，
+     yield语句会把你需要的值返回给调用生成器的地方，然后退出函数，下一次调用生成器函数的时候又从上次中断的地方开始执行，而生成器内的素有变量参数
+     都会被保存下来供下一次使用。
+     def fib(max):
+         a,b=0,1
+         while a<max:
+             yield a
+             a,b = b,a+b
+     for i in fib(20):
+         print(i)
