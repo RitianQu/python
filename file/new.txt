@@ -1,0 +1,157 @@
+#!/usr/bin/python
+import sys
+
+f = open(sys.argv[1],'a+')
+
+while True:
+    a = sys.stdin.readline()
+    if a == '#\n':
+        break
+    f.write(a)
+f.close()
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>input</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      input {
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
+
+        /*去掉掉input获得焦点的外部边框样式*/
+        outline-style: none;
+
+        /*去掉默认的边框*/
+        /*border: none;*/
+        padding-left: 10px;
+      }
+
+      button {
+        width: 80px;
+        height: 40px;
+        border: none;
+        /*outline-style: none;*/
+
+        /*设置鼠标放上去的效果*/
+        cursor:pointer;
+      }
+
+
+      .item {
+        border: 1px solid gray;
+        padding: 10px;
+      }
+
+      .item h3 {
+        color: green;
+        background: url("....jpg") no-repeat left center;
+      }
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+     <!-- input属于行元素，但是可以设置宽高  -->
+    <input type="text">
+    <input type="text">
+
+    <input type="button" value="按钮">
+
+
+     <!-- button 属于行元素，但是可以设置宽高  -->
+    <button>按钮</button>
+
+
+
+
+    <div class="head">
+        <div class="head-content">
+        <div class="head-content-top">
+            <div class="head-content-top-logo"></div>
+            <input type="text">
+          </div>
+          <div class="head-content-bottom">
+            <ul><li></li></ul>
+          </div>
+        </div>
+    </div>
+#!/usr/bin/python
+
+f = open('text.txt','a+')
+
+l = ['nihao\n','zaijian\n','hello\n','goodbye\n']
+
+f.writelines(l)
+fjsklfjksdlfjsld
+#!/usr/bin/python
+import sys
+
+f = open(sys.argv[1],'r')
+
+f_cp = open(sys.argv[2],'w')
+
+while True:
+    a = f.readline()
+    if a == '':
+        break
+    f_cp.write(a)
+#!/usr/bin/python
+import os
+
+l = os.listdir('.')
+f_new = open('new.txt','w+')
+
+for i in l:
+    if os.path.isfile(i):
+        f = open(i,'r')
+        a = f.read()
+        print a
+
+        f_new.write(a)
+    elif os.path.isdir(i):
+        os.chdir('./'+i)
+        l1 = os.listdir('.')
+        for j in l1:
+            f1 = open(j,'r')
+
+            b = f1.read()
+            print b
+            f_new.write(b)
+#!/usr/bin/python
+import sys
+
+try:
+    f = open(sys.argv[1],'r')
+    buf = f.read()
+except IOError as e:
+    print e
+
+print buf
+#!/usr/bin/env python
+# coding=utf-8
+
+f = open('text.txt','a+')
+
+s= '你在南方的艳阳里\n'
+
+f.write(s)
+#!/usr/bin/python
+
+with open('file.py','r+') as f:
+    str = f.read()
+
+print str
+
+print f.read()
+123123132131
