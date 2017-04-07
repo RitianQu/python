@@ -237,7 +237,7 @@
 #### 迭代器和生成器
      迭代器
      ```python
-     class TestIter:
+     #class TestIter:
      def __init__(self,a):
          self.a = a
      def __iter__(self):
@@ -254,7 +254,7 @@
      yield语句会把你需要的值返回给调用生成器的地方，然后退出函数，下一次调用生成器函数的时候又从上次中断的地方开始执行，而生成器内的素有变量参数
      都会被保存下来供下一次使用。
      ```python
-     def fib(max):
+     #def fib(max):
          a,b=0,1
          while a<max:
              yield a
