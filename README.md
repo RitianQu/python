@@ -168,24 +168,24 @@
      l = copy.copy(d)
      k = deepcopy(d)
 #### import random引入随机模块
-     import.randint（1，10）随机出现1到10之间的数
+     import.randint（1，10）随机出现1到10之间的数
 #### 语句结构 分支（选择）结构 if else elif 循环结构 for in while else break continue
 #### if 判断条件：
-     执行内容/pass pass：占位符 什么都不执行
-     if 判断条件：
-     执行内容
-     else：如果if条件不成立时执行这个
-     执行内容
+     执行内容/pass pass：占位符 什么都不执行
+     if 判断条件：
+     执行内容
+     else：如果if条件不成立时执行这个
+     执行内容
 #### 三元运算：
      x if 判断条件 else z 如果判断条件是真返回x，如果判断条件是假返回z
-     range 快速生成一个序列
-     range(i,j,[步进值])：i：起始值 j：终止值但不包括
-     range（10）生成一个0到10的序列
-     srange（10）：形成一个迭代对象
+     range 快速生成一个序列
+     range(i,j,[步进值])：i：起始值 j：终止值但不包括
+     range（10）生成一个0到10的序列
+     srange（10）：形成一个迭代对象
 #### for i in n: n可以使字符串 元组 序列 表达式 等
-     执行代码内容
-     迭代指重复执行一个命令
-     []
+     执行代码内容
+     迭代指重复执行一个命令
+     []
 #### while判断语句：
      执行内容
      else：
