@@ -161,10 +161,10 @@
      集合  set  无序的  可变的 -|^&运算   属性方法         in逻辑
      frozenset 无序的  不可变的 -|^&运算  属性方法         in逻辑
 #### import copy
-     如果对copy中的属性进行修改，会对copy有影响，不会影响deepcopy
-     d = [1,2,[3,4],5]对d进行任何操作都会影响m对【3，4】操作会影响m l 不会影响k
-     m=d
-     l = copy.copy(d)
+     如果对copy中的属性进行修改，会对copy有影响，不会影响deepcopy
+     d = [1,2,[3,4],5]对d进行任何操作都会影响m对【3，4】操作会影响m l 不会影响k
+     m=d
+     l = copy.copy(d)
      k = deepcopy(d)
 #### import random引入随机模块
      import.randint（1，10）随机出现1到10之间的数
